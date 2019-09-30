@@ -1,3 +1,17 @@
+## Installation Guide
+- Install Docker - https://www.docker.com/products/docker-desktop
+- Run jenkins docker
+  - Windows
+    ```bash
+    docker run -u root --rm -d -p 8080:8080 -p 50000:50000 --name jenkins -v //var/run/docker.sock:/var/run/docker.sock -v "C:/PATH-TO-JENKINS-DATA":/var/jenkins_home jenkinsci/blueocean
+    ```
+   - Unix
+     ```bash
+     docker run -u root --rm -d -p 8080:8080 -p 50000:50000 -v PATH-TO-JENKINS-DATA:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkinsci/blueocean
+     ```
+  - More details about installation [Jenkins with Docker](https://jenkins.io/doc/book/installing/#docker)
+- Verify Jenkins is running by opening going to url: http://localhost:8080
+  
 ## Build/Run
 - Source code of the React app is based on "react-shopping-cart" app made under MIT license by Jefferson Ribeiro
 - App is deployed to [Firebase](https://tesena2019.firebaseapp.com)
