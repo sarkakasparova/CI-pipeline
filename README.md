@@ -1,24 +1,6 @@
-## TADNL error solution info
-Presentation issue in Jenkins cause:
-  - Connection issue caused first run timeout and the job was killed
-  - It caused that some locks remained in the workspace
-  - Solution for such problem was to cleanup workspace or delete the job and create new one
-  
-Fixed run from feature branch:
-<p align="center">
-
-  <img src="feature_branch.png">
-</p>
-
-Fixed run from master branch:
-<p align="center">
-
-  <img src="master.png">
-</p>
-
 ## Build/Run
 - Source code of the React app is based on "react-shopping-cart" app made under MIT license by Jefferson Ribeiro
-- App is deployed to [Firebase](https://tadnl2019.firebaseapp.com)
+- App is deployed to [Firebase](https://tesena2019.firebaseapp.com)
 
 #### Requirements
 
