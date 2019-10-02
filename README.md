@@ -15,7 +15,7 @@
   
 ## Build/Run
 - Source code of the React app is based on "react-shopping-cart" app made under MIT license by Jefferson Ribeiro
-- App is deployed to [Firebase](https://tesena2019.firebaseapp.com)
+- App is deployed to [Firebase](https://tesena-ci-2019.firebaseapp.com)
 
 #### Requirements
 
