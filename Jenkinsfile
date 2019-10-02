@@ -28,8 +28,7 @@ pipeline {
     }
     stage('E2E') {
       steps {
-        sh 'npm rebuild node-sass'
-        sh 'npm run build'
+        sh 'npm run wdio'
       }
     }
     stage('Deploy') {
