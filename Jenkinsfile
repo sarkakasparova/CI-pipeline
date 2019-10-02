@@ -26,6 +26,12 @@ pipeline {
         sh 'npm run build'
       }
     }
+    stage('E2E') {
+      steps {
+        sh 'npm rebuild node-sass'
+        sh 'npm run build'
+      }
+    }
     stage('Deploy') {
       when {
         expression {"${env.GIT_BRANCH}" == "origin/master"}
