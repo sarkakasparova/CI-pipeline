@@ -26,7 +26,7 @@ pipeline {
         sh 'npm run build'
       }
     }
-    stage('E2E') {
+    stage('EtoE') {
       steps {
         sh 'npm run wdio'
       }
