@@ -7,6 +7,7 @@ pipeline {
     }
 	environment { 
         CI = 'true'
+		FIREBASE_DEPLOY_TOKEN = credentials('FIREBASE_DEPLOY_TOKEN')
     }
     stages {
         stage('Install') {
