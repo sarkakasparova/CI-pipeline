@@ -10,6 +10,10 @@
      ```bash
      docker run -u root --rm -d -p 8080:8080 -p 50000:50000 -v PATH-TO-JENKINS-DATA:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock jenkinsci/blueocean
      ```
+  - Enter running docker container
+    ```bash
+     docker exec -i -t jenkins /bin/bash
+     ```
   - More details about installation [Jenkins with Docker](https://jenkins.io/doc/book/installing/#docker)
 - Verify Jenkins is running by opening going to url: http://localhost:8080
   
